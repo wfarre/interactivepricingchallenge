@@ -1,0 +1,314 @@
+body {
+  font-family: 'Manrope';
+  font-weight: 600;
+  color: hsl(225, 20%, 60%);
+  font-size: 15px !important;
+}
+
+/* background page */
+.page {
+  background-color: hsl(230, 100%, 99%);
+  text-align: center;
+  border-bottom-left-radius: 25%;
+  padding-bottom: 19rem;
+}
+
+svg {
+  position: absolute;
+  z-index: 1;
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
+
+.title {
+  text-align: center;
+  font-weight: 800;
+  margin-top: 2rem;
+  color: hsl(227, 35%, 25%);
+  margin-top: 0;
+  padding-top: 5%;
+  z-index: 2;
+  position: relative;
+}
+
+.subtitle {
+  color: hsl(225, 20%, 60%);
+  text-align: center;
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+/* PRICE SECTION */
+.price-box {
+  color: hsl(225, 20%, 60%);
+  width: 40%;
+  background-color: hsl(0, 0%, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  padding: 3%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 5%;
+}
+
+.comntainer{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.row{
+  padding: 0 !important;
+}
+
+.col{
+  padding: 0 !important;
+  text-align: left!important;
+}
+
+.pageview-price {
+  margin: 2rem 0;
+}
+
+.pageview {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-left: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+.monthly-price {
+  text-align: right !important;
+}
+
+#price {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: bold;
+  color: hsl(227, 35%, 25%);
+}
+
+#discount {
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  font-style: normal bold;
+}
+
+.discountSwitch {
+  text-align: center;
+}
+
+/* RANGE */
+  .form-range {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 10px !important;
+    border-radius: 3rem !important;
+    padding: 0;
+    color: transparent !important;
+    background: linear-gradient(to right, hsl(174, 77%, 80%) 0%,hsl(174, 77%, 80%) 25%, hsl(223, 50%, 87%) 25%, hsl(223, 50%, 87%) 100%) ;
+
+
+  }
+
+  /* .form-range {
+      color: linear-gradient(to right, green 0%, green 50%, #fff 50%, #fff 100%)!important;
+      border: none !important;
+      border-radius: 8px;
+      height: 7px;
+      width: 356px;
+      outline: none !important;
+      transition: background 450ms ease-in !important;
+      -webkit-appearance: none !important;
+
+  } */
+
+
+
+  .form-range:focus::-webkit-slider-thumb {
+    box-shadow: 0 1rem 3rem 0.8rem hsl(174, 77%, 80%) !important;
+    background-color: hsl(174, 86%, 45%) !important;
+    box-shadow: -20rem 0 0 20rem　hsl(174, 77%, 80%) !important;
+
+  }
+
+  .form-range:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem hsl(174, 77%, 80%) !important;
+    box-shadow: -20rem 0 0 20rem　hsl(174, 77%, 80%) !important;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    padding: 1.5rem;
+    margin-top: -1.30rem !important;
+    background-color: hsl(174, 77%, 80%) !important;
+    box-shadow: 0 1rem 3rem 0.5rem hsl(174, 77%, 80%) !important;
+    background-image: url("images/icon-slider.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    border-radius: 2rem !important;
+  }
+
+  .form-range::-webkit-slider-thumb:active {
+    background-color: hsl(174, 86%, 45%) !important;
+    box-shadow: -20rem 0 0 20rem　hsl(174, 77%, 80%) !important;
+
+  }
+
+  .form-range::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 0.5rem;
+    cursor: grab;
+    border-color: transparent;
+    border-radius: 1rem;
+    background-color: grey !important;
+    background: transparent !important;
+    /* linear-gradient(to right, hsl(174, 77%, 80%) 0%,hsl(174, 77%, 80%) 25%, hsl(223, 50%, 87%) 25%, hsl(223, 50%, 87%) 100%) !important; */
+
+  }
+
+
+
+  /* #priceRange::-moz-range-track {
+  width: 100%;
+  height: 0.5rem;
+  color: transparent !important;
+  cursor: pointer;
+  background-color: transparent !important;
+  border-color: inherit !important;
+  border-radius: 1rem;
+} */
+
+
+/* @media screen and (-webkit-min-device-pixel-ratio:0) {
+    #priceRange {
+      overflow: hidden;
+      width: 80px;
+      -webkit-appearance: none;
+      background-color: #9a905d;
+    }
+
+    #priceRange::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      margin-top: -1px;
+    }
+
+    #priceRange::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #434343;
+      box-shadow: -80px 0 0 80px #43e5f7;
+    }
+
+} */
+/* SWITCH */
+.switch {
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(225, 20%, 60%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: hsl(174, 86%, 45%);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.advantages {
+  text-align: left;
+}
+
+i {
+  color: hsl(174, 86%, 45%);
+}
+
+.start-trial {
+  padding: 0 10% !important;
+  width: 12rem !important;
+  height: 3rem !important;
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(225, 20%, 60%);
+  border-radius: 1000px;
+  text-align: center;
+  font: normal bold 1rem "Manrope";
+}
+.col-start{
+  text-align: right!important;
+}
+.col-layout {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+button:hover {
+  color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
